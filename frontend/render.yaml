@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: vidya-mitra-frontend
+    env: docker
+    repo: https://github.com/gandhisiddhi81/Vidya_Mitra_Career_Devlopment_Platform-Frontend-.git
+    rootDir: .
+    dockerContext: .
+    dockerfilePath: ./Dockerfile
+    plan: free
+    region: oregon
+    envVars:
+      - key: VITE_API_BASE
+        value: https://vidya-mitra-backend.onrender.com
+      - key: VITE_SUPABASE_URL
+        value: https://ilmwebrpykhijzkxfimc.supabase.co
+      - key: VITE_SUPABASE_ANON_KEY
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlsbXdlYnJweWtoaWp6a3hmaW1jIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE4MzYwNDksImV4cCI6MjA4NzQxMjA0OX0.CXp8wUsuV4R2_-kUkGhJ9vH159fCGgnIfVTQkTxDNRo
+
